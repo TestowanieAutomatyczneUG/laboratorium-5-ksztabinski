@@ -15,3 +15,5 @@ class Hamming:
             raise ValueError("str2 is longer than str1")
         elif len(string1) == 0 and len(string2) >= 1:
             raise ValueError("str1 cannot be empty")
+        elif len(string1) >= 1 and len(string2) == 0:
+            raise ValueError("str2 cannot be empty")
