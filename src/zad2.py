@@ -4,3 +4,5 @@ class Roman:
             return "I"
         elif value == 2:
             return "II"
+        elif value == 3:
+            return "III"
