@@ -1,3 +1,4 @@
 class Roman:
     def roman(self, value):
-        return ""
+        if value == 1:
+            return "I"
