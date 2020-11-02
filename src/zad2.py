@@ -6,7 +6,8 @@ class Roman:
             5: "V",
             9: "IX",
             10: "X",
-            40: "XL"
+            40: "XL",
+            50: "L"
         }
 
     def roman(self, value):
