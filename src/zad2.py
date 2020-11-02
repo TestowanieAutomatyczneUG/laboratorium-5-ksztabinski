@@ -12,3 +12,5 @@ class Roman:
             return "V"
         elif value == 6:
             return "VI"
+        elif value == 9:
+            return "IX"
