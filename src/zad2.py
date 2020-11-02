@@ -1,16 +1,18 @@
 class Roman:
+    def __init__(self):
+        self.nums = {
+            1: "I",
+            4: "IV",
+            5: "V",
+            9: "IX",
+            10: "X"
+        }
+
     def roman(self, value):
-        if value == 1:
-            return "I"
-        elif value == 2:
-            return "II"
-        elif value == 3:
-            return "III"
-        elif value == 4:
-            return "IV"
-        elif value == 5:
-            return "V"
-        elif value == 6:
-            return "VI"
-        elif value == 9:
-            return "IX"
+        result = ""
+        for val, num in sorted(self.nums.items(), reverse=True):
+            while value >= val:
+                result += num
+                value -= val
+        return result
+
