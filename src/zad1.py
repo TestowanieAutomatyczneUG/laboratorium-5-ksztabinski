@@ -9,5 +9,7 @@ class Hamming:
                     if string1[i] != string2[i]:
                         counter += 1
                 return counter
-        else:
+        elif len(string1) > len(string2):
             raise ValueError("str1 is longer than str2")
+        elif len(string1) < len(string2):
+            raise ValueError("str2 is longer than str1")
