@@ -29,5 +29,7 @@ class Song:
     def getVerses(self, num1, num2):
         if isinstance(num1, str) and isinstance(num2, int):
             raise ValueError("pierwszy parametr musi byc liczba")
+        elif isinstance(num1, int) and isinstance(num2, str):
+            raise ValueError("drugi paramter musi byc liczba")
         else:
             return [self.lyrics.split('.')[i] + '.\n' for i in range(len(self.lyrics.split('.'))) if (num1 - 1) <= i <= (num2 - 1)]
