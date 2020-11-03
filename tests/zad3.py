@@ -99,7 +99,6 @@ class SongTest(unittest.TestCase):
         with self.assertRaisesWithMessage(ValueError):
             self.song.getVerses(-1, 3)
 
-    @unittest.skip
     def test_disallow_get_verses_second_param_more_than_12(self):
         with self.assertRaisesWithMessage(ValueError):
             self.song.getVerses(11, 14)
