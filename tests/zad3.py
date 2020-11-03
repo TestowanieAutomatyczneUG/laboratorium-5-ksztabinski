@@ -82,7 +82,6 @@ class SongTest(unittest.TestCase):
         with self.assertRaisesWithMessage(ValueError):
             self.song.getVerse(13)
 
-    @unittest.skip
     def test_get_verse_less_than_1(self):
         with self.assertRaisesWithMessage(ValueError):
             self.song.getVerse(0)
