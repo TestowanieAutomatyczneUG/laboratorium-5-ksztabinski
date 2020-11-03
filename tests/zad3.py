@@ -103,7 +103,6 @@ class SongTest(unittest.TestCase):
         with self.assertRaisesWithMessage(ValueError):
             self.song.getVerses(11, 14)
 
-    @unittest.skip
     def test_disallow_get_verses_both_params_out_of_range(self):
         with self.assertRaisesWithMessage(ValueError):
             self.song.getVerses(44, 55)
