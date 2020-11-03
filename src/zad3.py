@@ -31,5 +31,7 @@ class Song:
             raise ValueError("pierwszy parametr musi byc liczba")
         elif isinstance(num1, int) and isinstance(num2, str):
             raise ValueError("drugi paramter musi byc liczba")
+        elif num1 < 1:
+            raise ValueError("pierwszy parametr nie moze byc mniejszy od 1")
         else:
             return [self.lyrics.split('.')[i] + '.\n' for i in range(len(self.lyrics.split('.'))) if (num1 - 1) <= i <= (num2 - 1)]
