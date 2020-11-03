@@ -8,7 +8,8 @@ class Roman:
             10: "X",
             40: "XL",
             50: "L",
-            90: "XC"
+            90: "XC",
+            100: "C"
         }
 
     def roman(self, value):
