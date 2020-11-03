@@ -18,10 +18,10 @@ class Song:
         res.pop()
         return res
 
-    def getVerse(self):
+    def getVerse(self, num):
         return ""
 
-    def getVerses(self):
+    def getVerses(self, num1, num2):
         return []
 
 song = Song()
