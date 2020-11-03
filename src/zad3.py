@@ -27,4 +27,7 @@ class Song:
             return self.lyrics.split('.')[num - 1] + '.'
 
     def getVerses(self, num1, num2):
-        return [self.lyrics.split('.')[i] + '.\n' for i in range(len(self.lyrics.split('.'))) if (num1 - 1) <= i <= (num2 - 1)]
+        if isinstance(num1, str) and isinstance(num2, int):
+            raise ValueError("pierwszy parametr musi byc liczba")
+        else:
+            return [self.lyrics.split('.')[i] + '.\n' for i in range(len(self.lyrics.split('.'))) if (num1 - 1) <= i <= (num2 - 1)]
