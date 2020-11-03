@@ -78,7 +78,6 @@ class SongTest(unittest.TestCase):
             'On the second day of Christmas my true love gave to me: two Turtle Doves, and a Partridge in a Pear Tree.\n'
         ])
 
-    @unittest.skip
     def test_get_verse_more_than_12(self):
         with self.assertRaisesWithMessage(ValueError):
             self.song.getVerse(13)
