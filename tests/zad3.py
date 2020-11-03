@@ -1,10 +1,11 @@
 import unittest
+from src.zad3 import Song
 
 
 class SongTest(unittest.TestCase):
 
     def test_show_all(self):
-        self.assertEqual(self.song.showAll, [
+        self.assertEqual(self.song.showAll(), [
             'On the first day of Christmas my true love gave to me: a Partridge in a Pear Tree.\n',
             'On the second day of Christmas my true love gave to me: two Turtle Doves, and a Partridge in a Pear Tree.\n',
             'On the third day of Christmas my true love gave to me: three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.\n',
