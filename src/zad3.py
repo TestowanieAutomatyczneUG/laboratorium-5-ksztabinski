@@ -21,6 +21,8 @@ class Song:
     def getVerse(self, num):
         if num > 12:
             raise ValueError("nie moze byc wiecej niz 12")
+        elif num < 1:
+            raise ValueError("nie moze byc mniej niz 1")
         else:
             return self.lyrics.split('.')[num - 1] + '.'
 
