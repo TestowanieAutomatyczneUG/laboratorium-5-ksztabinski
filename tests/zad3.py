@@ -86,7 +86,6 @@ class SongTest(unittest.TestCase):
         with self.assertRaisesWithMessage(ValueError):
             self.song.getVerse(0)
 
-    @unittest.skip
     def test_get_verses_first_param_not_int(self):
         with self.assertRaisesWithMessage(ValueError):
             self.song.getVerses("", 3)
