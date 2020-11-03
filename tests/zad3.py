@@ -95,7 +95,6 @@ class SongTest(unittest.TestCase):
             self.song.getVerses(2, "3")
 
 
-    @unittest.skip
     def test_disallow_get_verses_first_param_less_than_1(self):
         with self.assertRaisesWithMessage(ValueError):
             self.song.getVerses(-1, 3)
