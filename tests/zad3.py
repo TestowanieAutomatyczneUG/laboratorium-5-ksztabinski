@@ -26,7 +26,6 @@ class SongTest(unittest.TestCase):
     def test_get_second_verse(self):
         self.assertEqual(self.song.getVerse(2), 'On the second day of Christmas my true love gave to me: two Turtle Doves, and a Partridge in a Pear Tree.')
 
-    @unittest.skip
     def test_get_third_verse(self):
         self.assertEqual(self.song.getVerse(3), 'On the third day of Christmas my true love gave to me: three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.')
 
