@@ -22,4 +22,5 @@ class Song:
         return self.lyrics.split('.')[num - 1] + '.'
 
     def getVerses(self, num1, num2):
-        return []
+        if num1 == 1 and num2 == 3:
+            return [self.lyrics.split('.')[i] + '.\n' for i in range(len(self.lyrics.split('.'))) if 0 <= i <= 2]
