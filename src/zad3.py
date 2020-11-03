@@ -19,30 +19,7 @@ class Song:
         return res
 
     def getVerse(self, num):
-        if num == 1:
-            return self.lyrics.split('.')[0] + '.'
-        elif num == 2:
-            return self.lyrics.split('.')[1] + '.'
-        elif num == 3:
-            return self.lyrics.split('.')[2] + '.'
-        elif num == 4:
-            return self.lyrics.split('.')[3] + '.'
-        elif num == 5:
-            return self.lyrics.split('.')[4] + '.'
-        elif num == 6:
-            return self.lyrics.split('.')[5] + '.'
-        elif num == 7:
-            return self.lyrics.split('.')[6] + '.'
-        elif num == 8:
-            return self.lyrics.split('.')[7] + '.'
-        elif num == 9:
-            return self.lyrics.split('.')[8] + '.'
-        elif num == 10:
-            return self.lyrics.split('.')[9] + '.'
-        elif num == 11:
-            return self.lyrics.split('.')[10] + '.'
-        elif num == 12:
-            return self.lyrics.split('.')[11] + '.'
+        return self.lyrics.split('.')[num - 1] + '.'
 
     def getVerses(self, num1, num2):
         return []
