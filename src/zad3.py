@@ -14,7 +14,7 @@ class Song:
                       "On the twelfth day of Christmas my true love gave to me: twelve Drummers Drumming, eleven Pipers Piping, ten Lords-a-Leaping, nine Ladies Dancing, eight Maids-a-Milking, seven Swans-a-Swimming, six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree."
 
     def showAll(self):
-        res = [i for i in self.lyrics.split('.')]
+        res = [i + '.' for i in self.lyrics.split('.')]
         res.pop()
         return res
 
