@@ -23,6 +23,3 @@ class Song:
 
     def getVerses(self, num1, num2):
         return []
-
-song = Song()
-print(song.showAll())
